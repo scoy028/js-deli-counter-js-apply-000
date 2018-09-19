@@ -23,6 +23,13 @@ function currentLine(katzDeliLine) {
     let placeInLine = katzDeliLine.indexOf(curPerson) + 1;
     let personAndPlace = placeInLine + ". " + curPerson;
     messageToLine += personAndPlace + ", ";
+    for (let j = katzDeliLine.length - 1; j < katzDeliLine.length; ++j) {
+      let lastPerson = katzDeliLine[j];
+      let lastPlace = katzDeliLine.indexOf(lastPerson) + 1;
+      let lastAndPlace = lastPlace + ". " + lastPerson;
+      messageToLine += lastAndPlace;
+    }
   }
+  
   return messageToLine;
 }
