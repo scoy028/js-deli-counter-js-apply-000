@@ -18,7 +18,7 @@ function currentLine(katzDeliLine) {
     return "The line is currently empty.";
   }
   let messageToLine = "The line is currently: ";
-  for (let i = 0; i < katzDeliLine.length; ++i) {
+  for (let i = 0; i < katzDeliLine.length - 1; ++i) {
     let curPerson = katzDeliLine[i];
     let placeInLine = katzDeliLine.indexOf(curPerson) + 1;
     let personAndPlace = placeInLine + ". " + curPerson;
