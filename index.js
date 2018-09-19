@@ -22,7 +22,7 @@ function currentLine(katzDeliLine) {
     let curPerson = katzDeliLine[i];
     let placeInLine = katzDeliLine.indexOf(curPerson) + 1;
     let personAndPlace = placeInLine + ". " + curPerson;
-    messageToLine += personAndPlace +;
+    messageToLine += personAndPlace + " ,";
   }
   return messageToLine;
 }
